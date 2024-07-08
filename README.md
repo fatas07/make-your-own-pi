@@ -4,6 +4,8 @@
 MyoPi is an open-source platform inspired by existing mini PC solutions in the market. With its compact design and powerful performance, MyoPi stands out, offering limitless creative potential for technology enthusiasts. Designed to empower users to shape their own digital worlds, MyoPi is versatile, suitable for a wide range of applications from IoT projects to educational applications. Its open-source nature provides users with an experience filled with innovation and freedom. Explore technology with MyoPi, push boundaries, and create your own digital future.
 
 
+
+
 #### FEATURES
 
 | Feature                | Details                                                   |
@@ -24,6 +26,9 @@ MyoPi is an open-source platform inspired by existing mini PC solutions in the m
 
 > The system has been tested with 2GB of RAM and supports a maximum of 4GB.
 
+
+
+
 #### SCHEMATICS & PCB
 
 | File | Link |
@@ -35,6 +40,8 @@ MyoPi is an open-source platform inspired by existing mini PC solutions in the m
 > JLCPCB special 8-Layer PCB offer only 2$
 
 
+
+
 #### OS IMAGE
 
 | File | Link |
@@ -42,8 +49,14 @@ MyoPi is an open-source platform inspired by existing mini PC solutions in the m
 | Ubuntu 20.04 | Soon |
 
 
+
+
 #### TEST CASES
 Coming Soon
+
+
+
+
 #### DEVELOPMENT
 Coming Soon
 
