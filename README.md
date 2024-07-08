@@ -2,7 +2,8 @@
 ## _Make Your Own Pi_
 
 MyoPi is an open-source platform inspired by existing mini PC solutions in the market. With its compact design and powerful performance, MyoPi stands out, offering limitless creative potential for technology enthusiasts. Designed to empower users to shape their own digital worlds, MyoPi is versatile, suitable for a wide range of applications from IoT projects to educational applications. Its open-source nature provides users with an experience filled with innovation and freedom. Explore technology with MyoPi, push boundaries, and create your own digital future.
-![](Documentation/3-Images/Side 3D.jpg)
+<img src="Documentation/3-Images/Side%203D.jpg" alt="Açıklama" width="372" height="345">
+<img src="Documentation/3-Images/Side%20Assembled.jpg" alt="Açıklama" width="372" height="345">
 &nbsp;
 
 #### FEATURES
