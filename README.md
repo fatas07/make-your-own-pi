@@ -2,12 +2,11 @@
 ## _Make Your Own Pi_
 
 MyoPi is an open-source platform inspired by existing mini PC solutions in the market. With its compact design and powerful performance, MyoPi stands out, offering limitless creative potential for technology enthusiasts. Designed to empower users to shape their own digital worlds, MyoPi is versatile, suitable for a wide range of applications from IoT projects to educational applications. Its open-source nature provides users with an experience filled with innovation and freedom. Explore technology with MyoPi, push boundaries, and create your own digital future.
-
-
-
+![](Documentation/3-Images/Side 3D.jpg)
+&nbsp;
 
 #### FEATURES
-
+####
 | Feature                | Details                                                   |
 |------------------------|-----------------------------------------------------------|
 | CPU                    | Allwinner H616/H618 Quad-Core Cortex-A53 Processor 1.5GHz  |
@@ -26,36 +25,27 @@ MyoPi is an open-source platform inspired by existing mini PC solutions in the m
 
 > The system has been tested with 2GB of RAM and supports a maximum of 4GB.
 
-
-
-
+&nbsp;
 #### SCHEMATICS & PCB
-
+####
 | File | Link |
 | ------ | ------ |
 | Schematic | [fatas07/make-your-own-pi/Hardware/1-Schematic/ID-CORE Schematic R1_2.pdf][Schematic] |
 | Gerber | [fatas07/make-your-own-pi/Hardware/2-Gerber/Project Outputs for ID-CORE R1_2.rar][Gerber] |
 | Documentation | [fatas07/make-your-own-pi/Documentation][Documentation] |
-
 > JLCPCB special 8-Layer PCB offer only 2$
 
-
-
-
+&nbsp;
 #### OS IMAGE
-
+####
 | File | Link |
 | ------ | ------ |
 | Ubuntu 20.04 | Soon |
-
-
-
+&nbsp;
 
 #### TEST CASES
 Coming Soon
-
-
-
+&nbsp;
 
 #### DEVELOPMENT
 Coming Soon
