@@ -118,10 +118,11 @@ We find the naming of the emmc on the card by the operating system with the foll
 lsblk
 ```
 
-We will see an image like below. (<font color='red'>0</font> may change)
-mmcblk<font color='red'>0</font> 
-mmcblk<font color='red'>0</font>boot0 
-mmcblk<font color='red'>0</font>boot1
+We will see an image like below. (`0` may change)
+
+mmcblk0  
+mmcblk0boot0  
+mmcblk0boot1  
 
 ⚡️We will continue our process assuming the mmc memory is named mmcblk0.
 
@@ -136,7 +137,7 @@ sudo sync
 🔹Burn Linux image to eMMC 
 
 Open the terminal where the linux image file is located
-Change name <font color='red'>linux-image-file</font> to real name
+Change name `linux-image-file` to real name
 ```sh
 sudo dd bs=1M if=linux-image-file.img of=/dev/mmcblk0  status=progress
 ```
