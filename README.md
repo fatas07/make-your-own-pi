@@ -76,7 +76,7 @@ Explore technology, push the boundaries and create your own digital future with 
 | Ubuntu 22.04 | Empty | ✅ Boot from SD card |
 | Empty | Ubuntu 22.04 | ✅ Boot from eEMMC |
 | Ubuntu 22.04 | Ubuntu 22.04 | ✅ Boot from SD card |
-> If boot from SD card, eMMC usage is external storage
+> If boot from SD card, eMMC usage is external storage  
 > If boot from eMMC, please insert empty SD card for external storage (must)
 
 &nbsp;
@@ -104,7 +104,7 @@ Explore technology, push the boundaries and create your own digital future with 
 
 ### 🔶 DEVELOPMENT
 #### 🔸Burning Linux Image to Micro SD Card
-If you are using Windows operating system, you can use balenaetcher.
+If you are using Windows operating system, you can use balenaetcher.  
 If you are using Linux operating system, you can burn the image with disks (gnome-disk-utility).
 
 #### 🔸Burning Linux Image to eMMC
@@ -112,13 +112,13 @@ If you are using Linux operating system, you can burn the image with disks (gnom
 - First, we burning the Linux image on the SD card and boot from the SD card to confirm that the system boots normally.
 - If the system boots normally, we copy the Linux image to an accessible place on the SD card and boot the system again with the SD card. (The process can also be proceeded by copying the Linux image file to a USB memory instead of an SD card)
 ###
-We find the naming of the emmc on the card by the operating system with the following command. 
+We find the naming of the emmc on the board by the operating system with the following command. 
 
 ```sh
 lsblk
 ```
 
-We will see an image like below. (`0` may change)
+We will see like below. (mmcblk`0` may change)
 
 mmcblk0  
 mmcblk0boot0  
@@ -145,7 +145,7 @@ sudo dd bs=1M if=linux-image-file.img of=/dev/mmcblk0  status=progress
 ```sh
 sudo sync
 ```
-👉 If all operations are completed successfully, when you format the SD card and insert it into the card, the system will boot via eMMC and see the SD card as external storage.
+👉 If all operations are completed successfully, when you format the SD card and insert it into the board, the system will boot via eMMC and see the SD card as external storage.
 
 #### 🔸Debug With UART Serial Port
 You can debug using putty. (115200bps)
