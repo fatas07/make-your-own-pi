@@ -28,7 +28,7 @@ Explore technology, push the boundaries and create your own digital future with 
 | OS                     | Ubuntu 22.04                                              |
 | PCB Size               | 50mm x 50mm                                               |
 
-> The system has been tested with 2GB of RAM and supports a maximum of 4GB.
+> The system has been tested with 2GB of RAM and supports a maximum of 4GB.  
 > The system has been tested with 8GB eMMC and can be increased upon request.
 
 &nbsp;
