@@ -1,41 +1,47 @@
 
-
 # MyoPi 🚀
-## _Make Your Own Pi_
+## 📢 _Make Your Own Pi_
 
-MyoPi is an open-source platform inspired by existing mini PC solutions in the market. With its compact design and powerful performance, MyoPi stands out, offering limitless creative potential for technology enthusiasts. Designed to empower users to shape their own digital worlds, MyoPi is versatile, suitable for a wide range of applications from IoT projects to educational applications. Its open-source nature provides users with an experience filled with innovation and freedom. Explore technology with MyoPi, push boundaries, and create your own digital future.
-<img src="Documentation/3-Images/Side%203D.jpg" alt="Açıklama" width="372" height="345">
-<img src="Documentation/3-Images/Side%20Assembled.jpg" alt="Açıklama" width="372" height="345">
+MyoPi is an open source embedded Linux computer project inspired by existing mini PC (Fruit Pi) solutions on the market to create your own mini PC. With its strong, compact and flexible structure, it offers an ideal platform that can be used in various projects. It allows developers and tech enthusiasts to build and customize their own personal computers. MyoPi, which can be used both for educational purposes and in various projects, offers users a low-cost and high-performance solution.
+
+MyoPi is not just a computer but also a learning platform. It is an ideal tool for those who want to have knowledge about both software and hardware. With MyoPi, you can realize your own projects, learn new things and get one step ahead in the world of technology.
+
+Explore technology, push the boundaries and create your own digital future with MyoPi.
+
+<img src="Documentation/3-Images/Side%203D.jpg" alt="3D Board" width="372" height="345">
+<img src="Documentation/3-Images/Side%20Assembled.jpg" alt="Assembled Board" width="372" height="345">
 &nbsp;
 
-### FEATURES
+### 🔶 FEATURES
 | Feature                | Details                                                   |
 |------------------------|-----------------------------------------------------------|
 | CPU                    | Allwinner H616/H618 Quad-Core Cortex-A53 Processor 1.5GHz |
 | GPU                    | Mali G31 MP2                                              |
 | RAM                    | LPDDR4: 1GB/2GB/4GB                                       |
-| STORAGE                | 16GB eMMC5.1 Onboard                                      |
+| STORAGE                | 8GB eMMC5.1 Onboard                                      |
 | SD CARD                | Micro SD card interface                                   |
 | WIFI+BT                | WIFI/BT5.0                                                |
 | ETHERNET               | Support 10M/100M                                          |
 | VIDEO/AUDIO OUTPUT     | HDMI-A supporting 4K@60FPS                                |
-| USB                    | Type-C USB2.0x2                                           |
+| USB                    | Type-C USB2.0 x 2                                           |
 | DEBUG                  | Uart TX/RX/GND                                            |
 | LED                    | Status Led                                                |
 | OS                     | Ubuntu 22.04                                              |
 | PCB Size               | 50mm x 50mm                                               |
 
 > The system has been tested with 2GB of RAM and supports a maximum of 4GB.
+> The system has been tested with 8GB eMMC and can be increased upon request.
 
 &nbsp;
-### HARDWARE
+
+### 🔶 HARDWARE
 | File | Link |
 | ------ | ------ |
 | Schematic | [fatas07/make-your-own-pi/Hardware/1-Schematic/ID-CORE Schematic R1_2.pdf][Schematic] |
 | Gerber | [fatas07/make-your-own-pi/Hardware/2-Gerber/Project Outputs for ID-CORE R1_2.rar][Gerber] |
 | Documentation | [fatas07/make-your-own-pi/Documentation][Documentation] |
 
----
+###
 
 | Pcb | Value |
 | ------ | ------ |
@@ -50,17 +56,19 @@ MyoPi is an open-source platform inspired by existing mini PC solutions in the m
 | Via Covering | Epoxy Filled & Capped |
 | Impedance Control | [fatas07/Documentation/1-Pcb/1-Specs/PCB Specs.xlsx][Impedance] |
 
->  [JLCPCB][Jlcpcb]  special 8-Layer PCB offer only 2$
+>  [JLCPCB][Jlcpcb]  5pcs special 8-Layer PCB offer only 2$
 
 &nbsp;
 
-### SOFTWARE
+### 🔶 SOFTWARE
 | OS Image | Link |
 | ------ | ------ |
 | Ubuntu 22.04 | 🔜 Soon |
+> When all tests are completed, the builded Linux Ubuntu 22.04 image file will be shared.
+
 &nbsp;
 
-### BOOT STATUS
+### 🔶 BOOT STATUS
 | SD Card | eMMC | Status |
 | ------ | ------ |------ |
 | Empty | Empty | ❌ |
@@ -74,7 +82,7 @@ MyoPi is an open-source platform inspired by existing mini PC solutions in the m
 
 &nbsp;
 
-### TEST CASES
+### 🔶 TEST CASES
 | Peripheral | Status |
 | ------ | ------ |
 | SD Card Boot | ✅ |
@@ -95,25 +103,27 @@ MyoPi is an open-source platform inspired by existing mini PC solutions in the m
 
 &nbsp;
 
-### DEVELOPMENT
-#### Burning Linux Image to Micro SD Card
+### 🔶 DEVELOPMENT
+#### 🔸Burning Linux Image to Micro SD Card
 If you are using Windows operating system, you can use balenaetcher.
-If you are using Linux operating system, you can burn the image with disks (gnome-disks-utility).
+If you are using Linux operating system, you can burn the image with disks (gnome-disk-utility).
 
-#### Burning Linux Image to eMMC
+#### 🔸Burning Linux Image to eMMC
 
 - First, we burning the Linux image on the SD card and boot from the SD card to confirm that the system boots normally.
 - If the system boots normally, we copy the Linux image to an accessible place on the SD card and boot the system again with the SD card. (The process can also be proceeded by copying the Linux image file to a USB memory instead of an SD card)
 ###
 We find the naming of the emmc on the card by the operating system with the following command. 
 
+```sh
+lsblk
+```
+
 We will see an image like below. (<font color='red'>0</font> may change)
 mmcblk<font color='red'>0</font> 
 mmcblk<font color='red'>0</font>boot0 
 mmcblk<font color='red'>0</font>boot1
-```sh
-lsblk
-```
+
 ⚡️We will continue our process assuming the mmc memory is named mmcblk0.
 
 🔹Format eMMC
@@ -125,6 +135,7 @@ sudo dd bs=1M if=/dev/zero of=/dev/mmcblk0  count=1000 status=progress
 sudo sync
 ```
 🔹Burn Linux image to eMMC 
+
 Open the terminal where the linux image file is located
 Change name <font color='red'>linux-image-file</font> to real name
 ```sh
@@ -136,17 +147,24 @@ sudo sync
 ```
 👉 If all operations are completed successfully, when you format the SD card and insert it into the card, the system will boot via eMMC and see the SD card as external storage.
 
-#### Debug With UART Serial Port
+#### 🔸Debug With UART Serial Port
 You can debug using putty. (115200bps)
 
 ❗ The board debug uart voltage level is 3.3V. Please make sure the uart voltage level of your Usb uart converter is 3.3V.
 ```mermaid
 graph LR
 0[PC] --> A[USB to UART]
-A -- TX - RX --> B(Board)
+A -- TX - RX --> B(BOARD)
 A -- RX - TX --> B
 A -- GND - GND --> B
 ```
+
+### 🔶 FEED BACK
+If you have any feedback, please reach out to me at firatatas@gmail.com
+
+
+### 🔶 ABOUT ME
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/firat-ataş-65803449/)
 
 
    [Schematic]: <https://github.com/fatas07/make-your-own-pi/blob/main/Hardware/1-Schematic/ID-CORE%20Schematic%20R1_2.pdf>
