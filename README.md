@@ -159,7 +159,7 @@ A -- RX - TX --> B
 A -- GND - GND --> B
 ```
 
-### 🔶 FEED BACK
+### 🔶 FEEDBACK
 If you have any feedback, please reach out to me at firatatas@gmail.com
 
 
