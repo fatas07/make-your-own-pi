@@ -8,8 +8,7 @@ MyoPi is not just a computer but also a learning platform. It is an ideal tool f
 
 Explore technology, push the boundaries and create your own digital future with MyoPi.
 
-<img src="Documentation/3-Images/Side%203D.jpg" alt="3D Board" width="372" height="345">
-<img src="Documentation/3-Images/Side%20Assembled.jpg" alt="Assembled Board" width="372" height="345">
+<img src="Documentation/3-Images/Side%203D.jpg" alt="3D Board" width="372" height="345"><img src="Documentation/3-Images/Side%20Assembled.jpg" alt="Assembled Board" width="372" height="345">
 &nbsp;
 
 ### 🔶 FEATURES
