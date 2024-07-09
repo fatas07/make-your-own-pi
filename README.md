@@ -136,7 +136,7 @@ sudo sync
 ```
 🔹Burn Linux image to eMMC 
 
-Open the terminal where the linux image file is located
+Open the terminal where the linux image file is located  
 Change name `linux-image-file` to real name
 ```sh
 sudo dd bs=1M if=linux-image-file.img of=/dev/mmcblk0  status=progress
