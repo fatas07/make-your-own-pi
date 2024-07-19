@@ -75,12 +75,12 @@ Explore technology, push the boundaries and create your own digital future with 
 | ------ | ------ |------ |
 | Empty | Empty | ❌ |
 | Not Inserted | Empty | ❌ |
-| Not Inserted | Ubuntu 22.04 | ❌ |
+| Not Inserted | Ubuntu 22.04 | ✅ Boot from eEMMC |
 | Ubuntu 22.04 | Empty | ✅ Boot from SD card |
 | Empty | Ubuntu 22.04 | ✅ Boot from eEMMC |
 | Ubuntu 22.04 | Ubuntu 22.04 | ✅ Boot from SD card |
 > If boot from SD card, eMMC usage is external storage  
-> If boot from eMMC, please insert empty SD card for external storage (must)
+> If boot from eMMC, if you want, please insert empty SD card for external storage
 
 &nbsp;
 
