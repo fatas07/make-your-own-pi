@@ -64,7 +64,7 @@ Explore technology, push the boundaries and create your own digital future with 
 | ------ | ------ |
 | Ubuntu 22.04 Desktop | 🔜 Soon |
 | Ubuntu 22.04 Server | 🔜 Soon |
-> U-Boot : v2024.01  
+> U-Boot : v2021.07  
 > Kernel : v6.1  
 > When all tests are completed, the builded Linux Ubuntu 22.04 image file will be shared.
 
@@ -102,6 +102,7 @@ Explore technology, push the boundaries and create your own digital future with 
 
 > * All testing processes were performed by crossing the incorrectly drawn HDMI SCL and SDA pins on the R1.0 PCB.
 > * The R1.2 PCB is a fix for the HDMI SCL and SDA pins that were drawn incorrectly in the R1.0.
+> * Wifi&BL could not be tested because the module was faulty. The faulty module will be replaced with a new one in the future.
 
 &nbsp;
 
