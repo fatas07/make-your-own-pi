@@ -65,7 +65,7 @@ Explore technology, push the boundaries and create your own digital future with 
 | Ubuntu 22.04 Desktop | 🔜 Soon |
 | Ubuntu 22.04 Server | 🔜 Soon |
 > U-Boot : v2021.07  
-> Kernel : v6.1  
+> Kernel : v6.1.31  
 > When all tests are completed, the builded Linux Ubuntu 22.04 image file will be shared.
 
 &nbsp;
